@@ -1,5 +1,5 @@
 {
-  "name": "constructor",
+  "name": "movies_db_test",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -7,19 +7,11 @@
     "build": "webpack --config webpack.config.js --mode=production",
     "start": "webpack-dev-server --config webpack.config.js --mode=development"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/XanderSpecter/constructor.git"
-  },
   "browserslist": [
     "last 3 version"
   ],
   "author": "XSpecter",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/XanderSpecter/constructor/issues"
-  },
-  "homepage": "https://github.com/XanderSpecter/constructor#readme",
   "devDependencies": {
     "@babel/cli": "^7.10.3",
     "@babel/core": "^7.10.3",
@@ -63,6 +55,7 @@
     "@types/uuid": "^8.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "uuid": "^8.1.0"
   }
 }
