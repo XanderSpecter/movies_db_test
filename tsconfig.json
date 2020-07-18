@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "module": "es6",
+    "target": "esnext",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowUnreachableCode": false,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false,
+    "lib": ["es2018", "dom.iterable", "dom"]
+  }
+}

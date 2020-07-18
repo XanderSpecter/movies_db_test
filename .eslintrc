@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "jsx": true,
+        "useJSXTextNode": true,
+        "project": "tsconfig.json",
+        "tsconfigRootDir": "."
+    },
+    "extends": [
+        "./node_modules/eslint-config-airbnb-base/rules/best-practices.js",
+        "./node_modules/eslint-config-airbnb-base/rules/errors.js",
+        "./node_modules/eslint-config-airbnb-base/rules/node.js",
+        "./node_modules/eslint-config-airbnb-base/rules/style.js",
+        "./node_modules/eslint-config-airbnb-base/rules/variables.js",
+        "./node_modules/eslint-config-airbnb-base/rules/es6.js",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "prettier",
+        "prettier/@typescript-eslint"
+    ],
+    "plugins": ["@typescript-eslint", "react-hooks"],
+    "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "semi": ["error", "always"],
+        "quotes": [2, "single"],
+        "no-trailing-spaces": "error"
+    }
+}
