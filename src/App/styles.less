@@ -1,3 +1,13 @@
-.main-wrapper {
+@import "../styles/colors.less";
+@import "../styles/media.less";
+
+.mdb-app-container {
     font-family: "Rubik", sans-serif;
+    max-width: 1180px;
+    margin: auto;
+
+    @media @lg {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

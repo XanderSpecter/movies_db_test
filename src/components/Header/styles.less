@@ -1,0 +1,42 @@
+@import "../../styles/media.less";
+
+.mdb-header {
+    width: 100%;
+    min-height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mdb-header__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.mdb-header__search {
+    flex-grow: 1;
+    margin-right: 16px;
+    align-items: center;
+
+    form {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mdb-header__input {
+        @media @md {
+            margin-right: 32px;
+        }
+    }
+
+    .mdb-link-button {
+        display: none;
+
+        @media @md {
+            display: block;
+        }
+    }
+}

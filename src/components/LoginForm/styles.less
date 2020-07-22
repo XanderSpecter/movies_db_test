@@ -1,0 +1,54 @@
+@import "../../styles/colors.less";
+
+.mdb-login-form {
+    background-color: white;
+    width: 232px;
+    height: 322px;
+    padding: 36px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    .MuiFormControlLabel-label {
+        font-family: "Rubik", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 19px !important;
+        color: @gray !important;
+    }
+
+    .MuiCheckbox-root {
+        color: @gray;
+    }
+}
+
+.mdb-login-form__header {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: @gray;
+
+    text-align: center;
+
+    margin-bottom: 24px;
+}
+
+.mdb-login-form__fields {
+    flex-grow: 1;
+}
+
+.mdb-login-form__field {
+    margin-bottom: 24px;
+}
+
+.mdb-login-form__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mdb-link-button {
+        margin-right: 16px;
+    }
+}

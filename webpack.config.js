@@ -37,7 +37,7 @@ module.exports = (env, argv = {}) => {
                     },
                 },
                 {
-                    test: /\.less/,
+                    test: /\.(les|cs)s?$/,
                     use: [
                         MiniCssExtractPlugin.loader,
                         'css-loader',
@@ -48,6 +48,14 @@ module.exports = (env, argv = {}) => {
                                 plugins: [autoprefixer()],
                                 sourceMap: !isProd,
                             },
+                        },
+                    ],
+                },
+                {
+                    test: /\.(png|jpe?g|gif|woff|eot|ttf|svg)$/i,
+                    use: [
+                        {
+                            loader: 'file-loader',
                         },
                     ],
                 },

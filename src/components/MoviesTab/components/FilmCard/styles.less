@@ -1,0 +1,56 @@
+@import "../../../../styles/colors.less";
+
+.mdb-film-card {
+    margin-right: 20px;
+
+    &:hover {
+        .mdb-film-card__description-shadow {
+            display: block;
+        }
+    }
+}
+
+.mdb-film-card__poster {
+    width: 100%;
+    padding-top: 132%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 8px;
+
+    position: relative;
+}
+
+.mdb-film-card__description-shadow {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: @gray_fade_darker;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: @gray_lighter;
+
+    padding: 16px;
+}
+
+.mdb-film-card__name {
+    margin-top: 16px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: @gray;
+}

@@ -1,0 +1,63 @@
+@import "../../../../styles/colors.less";
+@import "../../../../styles/media.less";
+
+.mdb-tv-tab__channel {
+    background: @gray_lighter;
+    border-radius: 8px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    color: @gray;
+
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media @md {
+        display: flex;
+    }
+}
+
+.mdb-tv-tab__channel-logo {
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    margin-bottom: 16px;
+
+    @media @md {
+        margin: 0;
+    }
+}
+
+.mdb-tv-tab__channel-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.mdb-tv-tab__channel-show {
+    font-size: 16px;
+    line-height: 19px;
+
+    display: flex;
+
+    margin-bottom: 12px;
+
+    &:first-child {
+        color: @red;
+    }
+}
+
+.mdb-tv-tab__channel-show-time {
+    min-width: 44px;
+    margin-right: 16px;
+}

@@ -1,0 +1,20 @@
+@import "../../styles/colors.less";
+
+.mdb-tv-tab {
+    & > div:first-child {
+        padding-right: 16px;
+    }
+
+    & > div:last-child {
+        width: 6px !important;
+        border-radius: 2px !important;
+        padding-left: 2px;
+        background-color: @gray_lighter;
+
+        & > div {
+            width: 4px !important;
+            background-color: @gray_more_light;
+            border-radius: 2px !important;
+        }
+    }
+}

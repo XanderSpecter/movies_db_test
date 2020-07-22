@@ -1,0 +1,178 @@
+@import "../../styles/colors.less";
+@import "../../styles/media.less";
+
+.mdb-film-detail {
+    margin-top: 44px;
+    position: relative;
+}
+
+.mdb-film-detail__back {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mdb-film-detail__info {
+    max-width: 980px;
+    margin: auto;
+
+    @media (min-width: 1020px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.mdb-film-detail__text {
+    max-width: 580px;
+    font-size: 20px;
+    line-height: 24px;
+    color: @gray;
+}
+
+.mdb-film-detail__row {
+    margin-bottom: 16px;
+
+    b {
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    div {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 19px;
+
+        min-width: 80px;
+        margin-right: 24px;
+    }
+}
+
+.mdb-film-detail__description {
+    margin-top: 24px;
+
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.mdb-film-detail__poster {
+    width: 280px;
+    height: 370px;
+
+    border-radius: 8px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: auto;
+    margin-bottom: 16px;
+    margin-top: 0;
+
+    @media (min-width: 1020px) {
+        margin-right: 120px;
+    }
+}
+
+.mdb-film-detail__subheader {
+    margin-top: 48px;
+    margin-bottom: 24px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: center;
+
+    color: @gray;
+}
+
+.mdb-film-detail__new-comment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+    @media @lg {
+        display: block;
+        text-align: center;
+    }
+}
+
+.mdb-film-detail__new-comment-input {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 780px;
+    margin-right: 16px;
+    border-radius: 8px;
+    background-color: @red_light;
+    resize: none;
+    border: none;
+    padding: 16px;
+    color: @red;
+    font-family: Rubik;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 200px;
+
+    &::placeholder {
+        color: @red;
+    }
+
+    @media @lg {
+        display: block;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+}
+
+.mdb-film-detail__no-user {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.mdb-film-detail__comments {
+    max-width: 780px;
+    font-size: 20px;
+    line-height: 24px;
+    color: @gray;
+    text-align: center;
+    margin: auto;
+}
+
+.mdb-film-detail__comment {
+    margin-bottom: 16px;
+    background-color: @gray_lighter;
+    color: @gray;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px;
+    text-align: left;
+    position: relative;
+}
+
+.mdb-film-detail__comment-user {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.mdb-film-detail__comment-delete {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: -32px;
+    width: 16px;
+    height: 16px;
+
+    @media @lg {
+        top: 8px;
+        right: 8px;
+    }
+}
